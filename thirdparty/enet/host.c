@@ -12,7 +12,7 @@
 
 /** Creates a host for communicating to peers.  
 
-    @param address   the address at which other peers may connect to this host.  If NULL, then no peers may connect to the host.
+    @param address   the address at which other peers may connect to this host. If NULL, then no peers may connect to the host.
     @param peerCount the maximum number of peers that should be allocated for the host.
     @param channelLimit the maximum number of channels allowed; if 0, then this is equivalent to ENET_PROTOCOL_MAXIMUM_CHANNEL_COUNT
     @param incomingBandwidth downstream bandwidth of the host in bytes/second; if 0, ENet will assume unlimited bandwidth.
@@ -21,7 +21,7 @@
     @returns the host on success and NULL on failure
 
     @remarks ENet will strategically drop packets on specific sides of a connection between hosts
-    to ensure the host's bandwidth is not overwhelmed.  The bandwidth parameters also determine
+    to ensure the host's bandwidth is not overwhelmed. The bandwidth parameters also determine
     the window size of a connection which limits the amount of reliable packets that may be in transit
     at any given time.
 */
